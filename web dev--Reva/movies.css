@@ -1,0 +1,133 @@
+/* Theme Variables */
+:root {
+    --primary: #25eb5d;
+    --accent: #f59e0b;
+    --background: #f3f4f6;
+    --text: #222222;
+}
+
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--primary);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(209, 19, 19);
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Hero / Banner */
+.hero {
+    margin-top: 55px;
+    padding: 60px 20px;
+    text-align: center;
+    color: rgb(51, 60, 180);
+    background: linear-gradient(135deg, var(--primary), #44d25c);
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Buttons */
+button,
+.btn {
+    background: var(--accent);
+    color: rgb(86, 83, 83);
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Cards */
+.card {
+    background: rgb(229, 213, 213);
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ccc;
+    max-width: 800px;
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+}
+
+/* Form */
+form {
+    background: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ccc;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}

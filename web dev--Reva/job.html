@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#apply">Apply</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Job Application Portal</h1>
+        <p>Find your dream job and apply today!</p>
+        <button>View Jobs</button>
+    </section>
+
+    <div class="card">
+        <h2>Available Jobs</h2>
+
+        <table>
+            <tr>
+                <th>Job</th>
+                <th>Department</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Software Developer</td>
+                <td>Technology</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>UI Designer</td>
+                <td>Design</td>
+                <td>Bangalore</td>
+            </tr>
+        </table>
+    </div>
+
+    <form id="apply">
+        <h2>Job Application Form</h2>
+
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Position</label>
+        <select>
+            <option>Software Developer</option>
+            <option>UI Designer</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Apply Now</button>
+    </form>
+</body>
+</html>
