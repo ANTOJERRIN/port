@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--this is we are assigning values to the variable -->
+        <title>my fuirst javascript </title>
+            <style type="text/css">
+                h1.one{color:red;text-align: center;}
+                h1.two{color:blue}
+            </style>
+</head>
+    <body>
+        <h1 class="one">sample program of javascript</h1>
+        <form>
+            <label for="number">Enter a number</label>
+            <input type="text" id="txtNumber"/>
+            <input type="submit" onclick=eg();/>
+        </form>
+        <script type="text/javascript">
+            <!---the javascriptsyntaxes-->
+            function eg{
+            var a=document.getElementById(txtNumber).value;
+            document.write(a);
+            
+            //document.write("<h1 style=color: blue>"+"value of "+a+"and"+b+"is"+c+"</h1>");<!--we are concatenating values here-->
+            
+        </script>
+    </body>
+</html>
