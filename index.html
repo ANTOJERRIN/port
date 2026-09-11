@@ -58,12 +58,22 @@
 
         <section class="booking-section" id="booking">
             <div class="booking-copy"><p class="eyebrow">Your matchday awaits</p><h2>Make it a night to remember.</h2><p>Choose your match, pick a view, and we will take care of the rest.</p><div class="perks"><span>&#10003; Instant confirmation</span><span>&#10003; Secure payments</span><span>&#10003; Easy cancellation</span></div></div>
-            <form class="booking-form">
-                <h3>Find your seats</h3>
-                <label for="match">Select match</label><select id="match"><option>Mumbai Indians vs Chennai Super Kings</option><option>Royal Challengers vs Kolkata Knight Riders</option><option>Rajasthan Royals vs Delhi Capitals</option></select>
-                <div class="form-row"><div><label for="date">Date</label><input id="date" type="date"></div><div><label for="tickets">Tickets</label><select id="tickets"><option>2 tickets</option><option>3 tickets</option><option>4 tickets</option></select></div></div>
-                <button class="button button-primary" type="submit">Continue to seats <span aria-hidden="true">&#8594;</span></button>
-            </form>
+            <div class="booking-panel">
+                <form class="booking-form">
+                    <h3>Find your seats</h3>
+                    <label for="match">Select match</label><select id="match"><option>Mumbai Indians vs Chennai Super Kings</option><option>Royal Challengers vs Kolkata Knight Riders</option><option>Rajasthan Royals vs Delhi Capitals</option></select>
+                    <div class="form-row"><div><label for="date">Date</label><input id="date" type="date"></div><div><label for="tickets">Tickets</label><select id="tickets"><option>2 tickets</option><option>3 tickets</option><option>4 tickets</option></select></div></div>
+                    <button class="button button-primary" type="submit">Continue to seats <span aria-hidden="true">&#8594;</span></button>
+                </form>
+                <aside class="booking-summary" aria-label="Booking summary">
+                    <p class="summary-label">Your booking</p>
+                    <h3>Matchday pass</h3>
+                    <div class="summary-line"><span>Entry ticket</span><strong>2 x</strong></div>
+                    <div class="summary-line"><span>Booking fee</span><strong>Included</strong></div>
+                    <div class="summary-total"><span>From</span><strong>&#8377; 1,499</strong></div>
+                    <p class="summary-note">Final price depends on your selected stand and seats.</p>
+                </aside>
+            </div>
         </section>
 
         <section class="section features" id="about"><div class="feature-card"><span class="feature-icon">&#9733;</span><h3>Premium views</h3><p>Choose from curated seats with the best sightlines in the stadium.</p></div><div class="feature-card"><span class="feature-icon">&#9889;</span><h3>Quick checkout</h3><p>A simple, secure booking flow gets you match-ready in minutes.</p></div><div class="feature-card"><span class="feature-icon">&#9829;</span><h3>Made for fans</h3><p>Everything you need for an electric, stress-free matchday.</p></div></section>
