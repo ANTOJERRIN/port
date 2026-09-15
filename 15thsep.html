@@ -1,0 +1,47 @@
+<Doctype! html>
+    <head> 
+        <style type="text/css">
+            h1.one{color:red; text-align:center}
+            h1.two{color: blue;}
+        </style>
+    </head>
+    <body>
+        <h1 class="one"> Sample program of javascript </h1>
+        <form onsubmit="eg(); return false;">
+            <label for="txtName">Enter your name</label>
+            <input type="text" id="txtName" minlength=5 maxlength=10/>
+            <label for="number"> Enter a number: </label>
+            <input type="text" id="txtNumber" maxlength=10  pattern="[0-9]{10}" title="exactly 10 digits" required/>
+            <input type="submit"/>
+
+        </form>
+        <p id="result"> </p>
+        <script type="text/javascript">
+
+            function eg(){
+                var name=document.getElementById("txtName").value;
+                var a=document.getElementById("txtNumber").value;
+                document.getElementById("result").innerHTML="welcome"+name+"and your phone number is"+ a;
+            }
+            /*var a=parseInt(prompt("Enter a number"));
+            var b=parseInt(prompt("Enter a number"));
+             // document.write() used for displaying content on the website
+
+            var c=a+b;
+            document.write("<h1 class=two>" + "Sum of a and b: "+ c + "</h1>");
+
+            if(c%2==0)
+        {
+            document.write(c + "is even");
+        }
+
+        else{
+            document.write(c + "is odd");
+        }
+            // + operator used for contacatination
+            alert(c)*/
+        </script>
+    </body>
+
+
+    </html>

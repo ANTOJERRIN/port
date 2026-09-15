@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">FoodHub</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Booking</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <h1>Restaurant Table Booking</h1>
+
+        <div class="booking-container">
+
+            <!-- Booking Form -->
+            <section class="booking-form">
+                <h2>Book a Table</h2>
+
+                <form>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Enter your name">
+
+                    <label>Date:</label>
+                    <input type="date">
+
+                    <label>Time:</label>
+                    <input type="time">
+
+                    <label>Number of Guests:</label>
+                    <input type="number" min="1">
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </section>
+
+            <!-- Booking Summary -->
+            <section class="summary">
+                <h2>Booking Summary</h2>
+
+                <p><b>Restaurant:</b> FoodHub</p>
+                <p><b>Location:</b> Bengaluru</p>
+                <p><b>Opening Hours:</b> 10 AM - 10 PM</p>
+
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening</th>
+                            <th>Closing</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>10 AM</td>
+                            <td>10 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10 AM</td>
+                            <td>10 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10 AM</td>
+                            <td>10 PM</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

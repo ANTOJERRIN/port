@@ -1,70 +1,116 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Booking Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Foodie Restaurant</title>
+    <link rel="stylesheet" href="j.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">BookEasy</div>
-
+    <!-- Navigation Bar -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Booking</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#booking">Booking</a>
     </nav>
-</header>
 
-<h1>Booking Form</h1>
+    <!-- Header -->
+    <header id="home">
+        <h1>Foodie Restaurant</h1>
+        <p>Delicious food made with love!</p>
+    </header>
 
-<div class="container">
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Foodie Restaurant. We serve fresh and tasty food at affordable prices.</p>
 
-    <div class="form">
-        <h2>Book Now</h2>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+             alt="Restaurant" width="300">
+    </section>
 
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Destination">
-        <input type="date">
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
 
-        <button>Book Now</button>
-    </div>
+        <ul>
+            <li>Pizza - ₹250</li>
+            <li>Burger - ₹150</li>
+            <li>Pasta - ₹200</li>
+            <li>French Fries - ₹100</li>
+        </ul>
 
-    <div class="summary">
-        <h2>Booking Summary</h2>
-        <p>Name: John</p>
-        <p>Destination: Bengaluru</p>
-        <p>Guests: 2</p>
-        <p>Total: ₹5000</p>
-    </div>
+        <!-- Table -->
+        <table>
+            <tr>
+                <th>Food</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>₹250</td>
+            </tr>
+            <tr>
+                <td>Burger</td>
+                <td>₹150</td>
+            </tr>
+            <tr>
+                <td>Pasta</td>
+                <td>₹200</td>
+            </tr>
+        </table>
+    </section>
 
-</div>
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>Book a Table</h2>
 
-<h2>Previous Bookings</h2>
+        <form>
+            Name:
+            <input type="text" placeholder="Enter your name">
 
-<div class="table">
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Destination</th>
-        <th>Status</th>
-    </tr>
+            <br><br>
 
-    <tr>
-        <td>John</td>
-        <td>Bengaluru</td>
-        <td>Confirmed</td>
-    </tr>
+            Email:
+            <input type="text" placeholder="Enter your email">
 
-    <tr>
-        <td>Rahul</td>
-        <td>Mysuru</td>
-        <td>Pending</td>
-    </tr>
-</table>
-</div>
+            <br><br>
+
+            Gender:
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+
+            <br><br>
+
+            Food Preference:
+            <input type="checkbox"> Vegetarian
+            <input type="checkbox"> Non-Vegetarian
+
+            <br><br>
+
+            Number of People:
+            <select>
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3 People</option>
+                <option>4 People</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Foodie Restaurant</p>
+        <a href="https://www.google.com">Visit Google</a>
+    </footer>
 
 </body>
 </html>
+```
